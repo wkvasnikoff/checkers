@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Checkers</title>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/index.js"></script>
+    </head>
+    <body>
+        <div id="user-info" style="display: none">
+            <label>Player 1:</label> <span id="player1"></span><br />
+            <label>Player 2:</label> <span id="player2"></span><br />
+            <label>Observers:</label> <span id="observers"></span>
+        </div>
+        <div id="login-form">
+            <label>Please Enter Your Name</label>
+            <input id="name" type="text" />
+            <button id="btn-login">Enter</button>
+        </div>
+
+        <button id="join" style="display: none;">Join Game</button><br />
+
+        <svg id="board" viewBox="0 0 80 80" width="500" height="500" style="border: 1px solid #777">
+            <rect id="bg-board" x="0" y="0" width="80" height="80" fill="#444" />
+        </svg>
+
+        <div id="cmd">
+        </div>
+
+        <div id="chat-div" style="display: none;">
+            <h2>Chat</h2>
+            <div id="messages">
+            </div>
+        </div>
+    </body>
+</html>

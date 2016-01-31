@@ -1,0 +1,8 @@
+{
+  "name": "checkers",
+  "version": "0.0.1",
+  "description": "Checkers Server",
+  "dependencies": {
+    "socket.io": "^1.4.4"
+  }
+}
